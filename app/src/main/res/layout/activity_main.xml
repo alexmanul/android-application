@@ -11,6 +11,7 @@
         android:layout_above="@id/ll_form_container"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="20dp"
+        android:gravity="center"
         android:text="@string/android_application"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="20sp" />
@@ -31,10 +32,11 @@
 
         <EditText
             android:id="@+id/editTextTextEmailAddress"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:autofillHints="@string/enter_text_here"
             android:ems="10"
+            android:gravity="center"
             android:imeOptions="actionNext"
             android:inputType="textEmailAddress" />
 
@@ -47,10 +49,11 @@
 
         <EditText
             android:id="@+id/editTextTextPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:autofillHints="@string/enter_password_here"
             android:ems="10"
+            android:gravity="center"
             android:imeOptions="actionDone"
             android:inputType="textPassword" />
 
@@ -65,17 +68,20 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_in" />
+            android:id="@+id/btn_sign_in"
+            style="@style/DefaultButton"
+            android:text="@string/sign_in"
+            />
 
         <Button
-            android:id="@+id/link"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/btn_forgot_password"
+            style="@style/TextButton"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginEnd="@dimen/default_margin"
+            android:layout_marginStart="@dimen/default_margin"
+            android:layout_marginTop="0dp"
             android:text="@string/forgot_password"
-            android:textAllCaps="false" />
+            />
 
     </LinearLayout>
 
